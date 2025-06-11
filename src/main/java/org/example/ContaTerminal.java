@@ -18,6 +18,8 @@ public class ContaTerminal {
         System.out.println("Digite saldo que você deseja depositar");
         BigDecimal saldo = scanner.nextBigDecimal();
         System.out.println("O saldo depositado foi de: " + saldo);
+
+        int numeroConta = (int) (Math.random() * 9000) + 1000;
     }
 
 }
