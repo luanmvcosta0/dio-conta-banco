@@ -25,7 +25,7 @@ public class ContaTerminal {
         int digitoAgencia = (int) (Math.random() * 10);
         String agencia = numeroAgencia + "-" + digitoAgencia;
 
-        System.out.println("Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua Agência é " + agencia + ", Conta: " + numeroConta + " e seu Saldo: " + saldo + " já esta disponível para saque.");
+        System.out.println("Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua Agência é " + agencia + ", Conta: " + numeroConta + " e seu Saldo: " + saldo + " já esta disponível para saque!");
     }
 
 }
