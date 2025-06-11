@@ -1,5 +1,6 @@
 package org.example;
 
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class ContaTerminal {
@@ -14,6 +15,9 @@ public class ContaTerminal {
         nomeCliente = nomeCliente.toUpperCase();
         System.out.println("Nome digitado: " + nomeCliente);
 
+        System.out.println("Digite saldo que você deseja depositar");
+        BigDecimal saldo = scanner.nextBigDecimal();
+        System.out.println("O saldo depositado foi de: " + saldo);
     }
 
 }
