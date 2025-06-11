@@ -20,6 +20,10 @@ public class ContaTerminal {
         System.out.println("O saldo depositado foi de: " + saldo);
 
         int numeroConta = (int) (Math.random() * 9000) + 1000;
+
+        int numeroAgencia = (int) (Math.random() * 900) + 100;
+        int digitoAgencia = (int) (Math.random() * 10);
+        String agencia = numeroAgencia + "-" + digitoAgencia;
     }
 
 }
