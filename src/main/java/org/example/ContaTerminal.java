@@ -9,13 +9,13 @@ public class ContaTerminal {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Bem vindo ao LuBank!");
-        System.out.println("Por favor digite seu nome completo.");
+        System.out.println("Bem vindo ao LuBank! Para criar sua conta basta digitar seu nome completo e depositar a quantia desejada.");
+        System.out.print("Por favor digite seu nome completo: ");
         String nomeCliente = scanner.nextLine();
         nomeCliente = nomeCliente.toUpperCase();
         System.out.println("Nome digitado: " + nomeCliente);
 
-        System.out.println("Digite saldo que você deseja depositar");
+        System.out.print("Digite saldo que você deseja depositar: ");
         BigDecimal saldo = scanner.nextBigDecimal();
         System.out.println("O saldo depositado foi de: " + saldo);
 
@@ -24,6 +24,8 @@ public class ContaTerminal {
         int numeroAgencia = (int) (Math.random() * 900) + 100;
         int digitoAgencia = (int) (Math.random() * 10);
         String agencia = numeroAgencia + "-" + digitoAgencia;
+
+        System.out.println("Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua Agência é " + agencia + ", Conta: " + numeroConta + " e seu Saldo: " + saldo + " já esta disponível para saque.");
     }
 
 }
